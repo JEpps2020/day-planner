@@ -97,5 +97,23 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script type="text/javascript">
+      let day=moment().format("MMM Do, YYYY hh:mm:ss");
+      // console.log(moment().format("MMM Do, YYYY hh:mm:ss"));
+
+      $("#currentDay").append(day);
+
+      let time=day.split(" ")[3];
+      // console.log(time.split(":")[0]);
+      
+      time=time.split(":")[0];
+      // console.log(time)
+      // console.log(moment().format("MMM Do, YYYY hh:mm:ss").split(" "));
+
+      
+
+    </script>
+
   </body>
 </html>
