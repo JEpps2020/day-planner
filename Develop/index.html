@@ -113,9 +113,7 @@
       // console.log(moment().format("MMM Do, YYYY hh:mm:ss").split(" "));
 
       $(".saveBtn").on("click", function(){
-// get value of timeblock
-//save it in local storage
-//when we render our page, get local storage, get items in local storage and set the text of to the hour blocks
+
       var a=$(this);
       console.log(a);
       
@@ -182,13 +180,6 @@
         localStorage.setItem("16",timeSlot.val());
       }
 
-      if (b === "16"){
-        alert("You pressed the 4PM button");
-        var timeSlot=$(".fourHour");
-        alert(timeSlot.val());
-        localStorage.setItem("16",timeSlot.val());
-      }
-
       if (b === "17"){
         alert("You pressed the 5PM button");
         var timeSlot=$(".fiveHour");
@@ -196,19 +187,115 @@
         localStorage.setItem("17",timeSlot.val());
       }
     });
-    
+
       $(document).ready(function(){
      
     
-          var getText1 = localStorage.getItem("9");
-      if (getText1 !== null)
+        var getInput1 = localStorage.getItem("9");
+      if (getInput1 !== null)
       {
         var timeSlot = $(".topHour");
-        timeSlot.val(getText1);
+        timeSlot.val(getInput1);
       }
       else
       {
         var timeSlot = $(".topHour");
+        timeSlot.val("");
+      }
+
+      var getInput2 = localStorage.getItem("10");
+      if (getInput2 !== null)
+      {
+        var timeSlot = $(".tenHour");
+        timeSlot.val(getInput2);
+      }
+      else
+      {
+        var timeSlot = $(".tenHour");
+        timeSlot.val("");
+      }
+
+      var getInput3 = localStorage.getItem("11");
+      if (getInput3 !== null)
+      {
+        var timeSlot = $(".elevenHour");
+        timeSlot.val(getInput3);
+      }
+      else
+      {
+        var timeSlot = $(".elevenHour");
+        timeSlot.val("");
+      }
+
+      var getInput4 = localStorage.getItem("12");
+      if (getInput4 !== null)
+      {
+        var timeSlot = $(".noonHour");
+        timeSlot.val(getInput4);
+      }
+      else
+      {
+        var timeSlot = $(".noonHour");
+        timeSlot.val("");
+      }
+
+      var getInput5 = localStorage.getItem("13");
+      if (getInput5 !== null)
+      {
+        var timeSlot = $(".oneHour");
+        timeSlot.val(getInput5);
+      }
+      else
+      {
+        var timeSlot = $(".oneHour");
+        timeSlot.val("");
+      }
+
+      var getInput6 = localStorage.getItem("14");
+      if (getInput6 !== null)
+      {
+        var timeSlot = $(".twoHour");
+        timeSlot.val(getInput6);
+      }
+      else
+      {
+        var timeSlot = $(".twoHour");
+        timeSlot.val("");
+      }
+
+      var getInput7 = localStorage.getItem("15");
+      if (getInput7 !== null)
+      {
+        var timeSlot = $(".threeHour");
+        timeSlot.val(getInput7);
+      }
+      else
+      {
+        var timeSlot = $(".threeHour");
+        timeSlot.val("");
+      }
+
+      var getInput8 = localStorage.getItem("16");
+      if (getInput8 !== null)
+      {
+        var timeSlot = $(".fourHour");
+        timeSlot.val(getInput8);
+      }
+      else
+      {
+        var timeSlot = $(".fourHour");
+        timeSlot.val("");
+      }
+
+      var getInput9 = localStorage.getItem("17");
+      if (getInput9 !== null)
+      {
+        var timeSlot = $(".fiveHour");
+        timeSlot.val(getInput9);
+      }
+      else
+      {
+        var timeSlot = $(".fiveHour");
         timeSlot.val("");
       }
 
