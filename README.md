@@ -1,2 +1,3 @@
 # day-planner
 Homework 5
+I have created a daily planner that displays hour-long blocks of time in which you can enter and save an event. Using moment.js, the current time and date is saved and displayed at the top of the page in the format of month, date, year and time. I have applied the same save button class to all of my save buttons and created an on-click function which allows the user to save their events in local storage fo reach time block. Each input field was also assigned it's own class in order to successfully set items/events to local storage. Using a ready function, I allowed the events to persist in the planner.  
